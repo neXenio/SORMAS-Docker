@@ -314,7 +314,7 @@ _main() {
 	fi
 
         # generate /etc/postgresql/postgresql.auto.conf with tuned values for current setup
-        /usr/local/bin/alter_system.py -i /etc/postgresql/postgresql.conf -o /var/lib/postgresql/data/postgresql.auto.conf -t /etc/postgresql/tuning_parameters.conf
+        # /usr/local/bin/alter_system.py -i /etc/postgresql/postgresql.conf -o /var/lib/postgresql/data/postgresql.auto.conf -t /etc/postgresql/tuning_parameters.conf
 	exec "$@"
 }
 
